@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>program saklar lampu</title>
+  </head>
+  <body>
+    <img src="img/off.gif" id="lampu" alt="" />
+    <button onclick="klik('on')">lampu on</button>
+    <button onclick="klik('off')">lampu off</button>
+    <script>
+    let lampu = document.getElementById('lampu');
+      function klik(e) {
+        if(e === "on"){
+          lampu.src = "img/on.gif";
+        }if(e === "off") {
+          lampu.src = "img/off.gif";
+        }
+      }
+    </script>
+  </body>
+</html>
